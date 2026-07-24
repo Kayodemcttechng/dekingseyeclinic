@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — De Kings Eyes Clinic</title>
+<meta name="description" content="Book your eye examination, cataract or glaucoma screening, pediatric or diabetic eye care appointment at De Kings Eyes Clinic, Lekki, Lagos — online, by phone, or on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%231626A6'/%3E%3Ccircle cx='12' cy='12' r='4.2' fill='%23FF6A00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="lock">
+
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <defs>
+      <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FF6A00"/>
+        <stop offset="1" stop-color="#1626A6"/>
+      </linearGradient>
+    </defs>
+    <g>
+      <path class="aperture-blade" d="M12 12 L12 1 A11 11 0 0 1 21.5 6.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L21.5 6.5 A11 11 0 0 1 21.5 17.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L21.5 17.5 A11 11 0 0 1 12 23 Z"/>
+      <path class="aperture-blade" d="M12 12 L12 23 A11 11 0 0 1 2.5 17.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L2.5 17.5 A11 11 0 0 1 2.5 6.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L2.5 6.5 A11 11 0 0 1 12 1 Z"/>
+    </g>
+  </svg>
+  <div class="loader-label">Focusing your view</div>
+</div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="20" fill="#1626A6"/>
+        <circle cx="21" cy="21" r="8.5" fill="#FF6A00"/>
+        <circle cx="24" cy="18" r="2.4" fill="#fff"/>
+      </svg>
+      <span class="brand-name">DE <b>KINGS EYES</b> CLINIC<small>Eye Care &amp; Biomedical Technology</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="appointment.html" aria-current="page">Book Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+2348012345678">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.4l1.8 4.6-2.2 1.8a13 13 0 0 0 6.6 6.6l1.8-2.2L21 16.6V20a1 1 0 0 1-1 1c-8.8 0-16-7.2-16-16a1 1 0 0 1 1-1Z"/></svg>
+        +234 801 234 5678
+      </a>
+      <a href="appointment.html" class="btn btn-primary btn-sm">Book Appointment</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><span>Book Appointment</span></div>
+    <h1>Book your visit in <span class="italic-accent">under a minute</span></h1>
+    <p>Fill in the form below and our front desk will confirm your slot within one business day — or skip the form and reach us directly by phone or WhatsApp.</p>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment-section section-pad" id="book">
+  <div class="container">
+    <div class="appt-grid">
+
+      <div class="appt-form reveal">
+        <h3>Appointment Request Form</h3>
+        <p>Required fields are marked. We'll call to confirm the exact time.</p>
+
+        <form id="apptForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">Full Name *</label>
+              <input id="fname" name="fname" type="text" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="fphone">Phone Number *</label>
+              <input id="fphone" name="fphone" type="tel" placeholder="+234 800 000 0000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="femail">Email *</label>
+              <input id="femail" name="femail" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="fdate">Preferred Date *</label>
+              <input id="fdate" name="fdate" type="date" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fservice">Service Needed *</label>
+            <select id="fservice" name="fservice" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Comprehensive Eye Examination">Comprehensive Eye Examination</option>
+              <option value="Cataract Screening">Cataract Screening</option>
+              <option value="Glaucoma Screening">Glaucoma Screening</option>
+              <option value="Pediatric Eye Care">Pediatric Eye Care</option>
+              <option value="Diabetic Eye Care">Diabetic Eye Care</option>
+              <option value="Contact Lens Services">Contact Lens Services</option>
+              <option value="Prescription Glasses">Prescription Glasses</option>
+              <option value="Emergency Eye Care">Emergency Eye Care</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="fmsg" placeholder="Tell us briefly what's going on with your vision or eyes — optional"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v3M17 3v3M4 9h16M5 6h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z"/></svg>
+            Request Appointment
+          </button>
+          <p class="form-note">This form does not connect to a live booking system yet — wire it up to your scheduling backend or email service to go live.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h4>Request received</h4>
+          <p>Thank you — our front desk will call you shortly to confirm your appointment time.</p>
+        </div>
+      </div>
+
+      <div class="appt-side reveal">
+        <div class="appt-info-card">
+          <h4>Prefer WhatsApp?</h4>
+          <p>Chat with our front desk instantly and book your slot in minutes — no forms needed.</p>
+          <a class="whatsapp-btn" href="https://wa.me/2348012345678?text=Hello%20De%20Kings%20Eyes%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-1.4-.6-2.3-1.1-3.2-2.6-.2-.3 0-.5.1-.6.1-.1.6-.7.7-.9.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.2 2.9.2.2 1.7 2.6 4.1 3.5 2 .8 2 .6 2.4.6.4 0 1.3-.5 1.5-1 .2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+            Chat On WhatsApp
+          </a>
+        </div>
+
+        <div class="appt-info-card">
+          <h4>Before You Come In</h4>
+          <ul class="appt-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg> Bring your current glasses or contact lenses</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg> Arrive 15 minutes early for registration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg> Bring your HMO ID if you have insurance coverage</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg> Have someone available to drive after dilation</li>
+          </ul>
+        </div>
+
+        <div class="appt-info-card">
+          <h4>Opening Hours</h4>
+          <div class="hours-table">
+            <div><span>Monday – Friday</span><span>8:00am – 6:00pm</span></div>
+            <div><span>Saturday</span><span>9:00am – 3:00pm</span></div>
+            <div><span>Sunday</span><span>Emergencies only</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NOT SURE WHICH SERVICE -->
+<section class="section-pad" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Not sure which service to select?</h2>
+        <p>Start with a comprehensive eye examination — our specialists will guide you from there.</p>
+      </div>
+      <div class="btns">
+        <a href="services.html" class="btn" style="background:#fff;color:var(--blue-dark);">View All Services</a>
+        <a href="contact.html" class="btn btn-ghost">Ask Us First</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 42 42" fill="none">
+            <circle cx="21" cy="21" r="20" fill="#1626A6"/>
+            <circle cx="21" cy="21" r="8.5" fill="#FF6A00"/>
+            <circle cx="24" cy="18" r="2.4" fill="#fff"/>
+          </svg>
+          <span class="brand-name">DE <b>KINGS EYES</b> CLINIC<small>Eye Care &amp; Biomedical Technology</small></span>
+        </a>
+        <p>A premium private eye hospital combining experienced specialists with modern biomedical technology — protecting your vision at every stage of life.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8.5h2V5h-2a4 4 0 0 0-4 4v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5a1 1 0 0 1 1-1Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.7v.1M12 16.5v-3.7c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2 1 2.2 2.4v3.6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Eye Examination</a></li>
+          <li><a href="services.html">Cataract Screening</a></li>
+          <li><a href="services.html">Glaucoma Screening</a></li>
+          <li><a href="services.html">Pediatric Eye Care</a></li>
+          <li><a href="services.html">Diabetic Eye Care</a></li>
+          <li><a href="services.html">Emergency Eye Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address>
+          <p>15 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
+          <p>+234 801 234 5678</p>
+          <p>care@dekingseyesclinic.com</p>
+        </address>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 De Kings Eyes Clinic. All rights reserved.</p>
+    <p class="made">Designed for modern, trustworthy eye care.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — De Kings Eyes Clinic</title>
+<meta name="description" content="Comprehensive eye examinations, cataract & glaucoma screening, pediatric and diabetic eye care, contact lenses, prescription glasses and emergency eye care — all under one roof at De Kings Eyes Clinic, Lekki, Lagos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%231626A6'/%3E%3Ccircle cx='12' cy='12' r='4.2' fill='%23FF6A00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="lock">
+
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <defs>
+      <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FF6A00"/>
+        <stop offset="1" stop-color="#1626A6"/>
+      </linearGradient>
+    </defs>
+    <g>
+      <path class="aperture-blade" d="M12 12 L12 1 A11 11 0 0 1 21.5 6.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L21.5 6.5 A11 11 0 0 1 21.5 17.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L21.5 17.5 A11 11 0 0 1 12 23 Z"/>
+      <path class="aperture-blade" d="M12 12 L12 23 A11 11 0 0 1 2.5 17.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L2.5 17.5 A11 11 0 0 1 2.5 6.5 Z"/>
+      <path class="aperture-blade" d="M12 12 L2.5 6.5 A11 11 0 0 1 12 1 Z"/>
+    </g>
+  </svg>
+  <div class="loader-label">Focusing your view</div>
+</div>
+
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="20" fill="#1626A6"/>
+        <circle cx="21" cy="21" r="8.5" fill="#FF6A00"/>
+        <circle cx="24" cy="18" r="2.4" fill="#fff"/>
+      </svg>
+      <span class="brand-name">DE <b>KINGS EYES</b> CLINIC<small>Eye Care &amp; Biomedical Technology</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="appointment.html">Book Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+2348012345678">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.4l1.8 4.6-2.2 1.8a13 13 0 0 0 6.6 6.6l1.8-2.2L21 16.6V20a1 1 0 0 1-1 1c-8.8 0-16-7.2-16-16a1 1 0 0 1 1-1Z"/></svg>
+        +234 801 234 5678
+      </a>
+      <a href="appointment.html" class="btn btn-primary btn-sm">Book Appointment</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
+    <h1>Every stage of eye care, under <span class="italic-accent">one roof</span></h1>
+    <p>From a routine eye test to same-day emergency treatment, each service below runs on calibrated, hospital-grade equipment and ends with a specialist explaining exactly what they found — and what happens next.</p>
+  </div>
+</section>
+
+<!-- SERVICE LIST -->
+<section class="section-pad" id="service-list">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Our Services</h2>
+      <p>Select a service to book it directly, or call the front desk if you're not sure which one you need.</p>
+    </div>
+
+    <div class="service-rows reveal reveal-stagger">
+      <div class="service-row" style="--i:0">
+        <span class="icon-badge blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-4.5 6-7 10-7s7.5 2.5 10 7c-2.5 4.5-6 7-10 7s-7.5-2.5-10-7Z"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+        <h3>Comprehensive Eye Examination</h3>
+        <p class="desc">Full assessment of vision, eye health and structure using calibrated diagnostic equipment — the starting point for almost every visit.</p>
+        <a href="appointment.html?service=Comprehensive%20Eye%20Examination" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:1">
+        <span class="icon-badge orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="9" cy="9" r=".6" fill="currentColor"/><circle cx="14" cy="8" r=".6" fill="currentColor"/><circle cx="15" cy="14" r=".6" fill="currentColor"/><circle cx="10" cy="15" r=".6" fill="currentColor"/></svg></span>
+        <h3>Cataract Screening</h3>
+        <p class="desc">Early detection of lens clouding, with guided treatment and surgical referral pathways if surgery is needed.</p>
+        <a href="appointment.html?service=Cataract%20Screening" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:2">
+        <span class="icon-badge blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12 7 9"/><path d="M12 7v1"/></svg></span>
+        <h3>Glaucoma Screening</h3>
+        <p class="desc">Intraocular pressure testing and optic nerve assessment to catch and manage glaucoma before it affects your sight.</p>
+        <a href="appointment.html?service=Glaucoma%20Screening" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:3">
+        <span class="icon-badge orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M9 13a3 3 0 0 1 3-3"/><path d="M8 6.5C8 5 9.5 4 9.5 4M16 6.5c0-1.5-1.5-2.5-1.5-2.5"/></svg></span>
+        <h3>Pediatric Eye Care</h3>
+        <p class="desc">Gentle, child-friendly vision screening and treatment for infants, children and teens, including lazy-eye detection.</p>
+        <a href="appointment.html?service=Pediatric%20Eye%20Care" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:4">
+        <span class="icon-badge blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 7.2 5 10a5 5 0 0 1-10 0c0-2.8 2-6 5-10Z"/></svg></span>
+        <h3>Diabetic Eye Care</h3>
+        <p class="desc">Retinal screening for diabetic patients, catching changes long before symptoms appear.</p>
+        <a href="appointment.html?service=Diabetic%20Eye%20Care" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:5">
+        <span class="icon-badge orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3>Contact Lens Services</h3>
+        <p class="desc">Fitting, supply and aftercare for soft, rigid and specialty contact lenses, matched to your prescription and lifestyle.</p>
+        <a href="appointment.html?service=Contact%20Lens%20Services" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:6">
+        <span class="icon-badge blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="13" r="3.2"/><circle cx="18" cy="13" r="3.2"/><path d="M9.2 12h5.6M2.5 13l1-4M21.5 13l-1-4"/></svg></span>
+        <h3>Prescription Glasses</h3>
+        <p class="desc">Precision lens grinding and a curated frame selection, fitted to your prescription on site.</p>
+        <a href="appointment.html?service=Prescription%20Glasses" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+      <div class="service-row" style="--i:7">
+        <span class="icon-badge orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.2v.1"/></svg></span>
+        <h3>Emergency Eye Care</h3>
+        <p class="desc">Rapid assessment for eye injuries, sudden vision loss and acute eye pain — same-day slots, every day.</p>
+        <a href="appointment.html?service=Emergency%20Eye%20Care" class="btn btn-outline btn-sm cta">Book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS WE TREAT -->
+<section class="bg-gray section-pad" id="conditions">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Conditions We Treat</span>
+      <h2>Eye Conditions We Diagnose &amp; Treat</h2>
+      <p>From everyday irritation to sight-threatening disease, our specialists treat the full range of ophthalmic conditions.</p>
+    </div>
+    <div class="conditions-grid reveal reveal-stagger">
+      <div class="condition-card" style="--i:0">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="9" cy="9" r=".5" fill="currentColor"/><circle cx="14" cy="8" r=".5" fill="currentColor"/><circle cx="15" cy="13" r=".5" fill="currentColor"/></svg></span>
+        <div><h4>Cataracts</h4><p>Clouding of the eye's natural lens, causing blurred or dim vision.</p></div>
+      </div>
+      <div class="condition-card" style="--i:1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 12 7 9"/></svg></span>
+        <div><h4>Glaucoma</h4><p>Raised eye pressure that gradually damages the optic nerve.</p></div>
+      </div>
+      <div class="condition-card" style="--i:2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-4.5 6-7 10-7s7.5 2.5 10 7c-2.5 4.5-6 7-10 7s-7.5-2.5-10-7Z"/><path d="M5 6l14 12"/></svg></span>
+        <div><h4>Refractive Errors</h4><p>Short-sightedness, long-sightedness and astigmatism affecting focus.</p></div>
+      </div>
+      <div class="condition-card" style="--i:3">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 7.2 5 10a5 5 0 0 1-10 0c0-2.8 2-6 5-10Z"/><path d="M9.5 13.5 12 16"/></svg></span>
+        <div><h4>Dry Eye Syndrome</h4><p>Insufficient tear quality leading to irritation, grit and discomfort.</p></div>
+      </div>
+      <div class="condition-card" style="--i:4">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-4.5 6-7 10-7s7.5 2.5 10 7c-2.5 4.5-6 7-10 7s-7.5-2.5-10-7Z"/><circle cx="12" cy="12" r="3"/><path d="M4 6l1.6 1.6M20 6l-1.6 1.6"/></svg></span>
+        <div><h4>Conjunctivitis</h4><p>Inflammation of the eye's surface, often called pink eye.</p></div>
+      </div>
+      <div class="condition-card" style="--i:5">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-4.5 6-7 10-7s7.5 2.5 10 7c-2.5 4.5-6 7-10 7s-7.5-2.5-10-7Z"/><path d="M12 17c2 2 4 .5 4-1.2 0-1.5-1.7-2-4-4.3-2.3 2.3-4 2.8-4 4.3C8 17.5 10 19 12 17Z" fill="currentColor" stroke="none"/></svg></span>
+        <div><h4>Diabetic Retinopathy</h4><p>Diabetes-related damage to the blood vessels of the retina.</p></div>
+      </div>
+      <div class="condition-card" style="--i:6">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 4 8.5 8 11 4-2.5 8-6 8-11V5Z"/><path d="M9 12.5h6"/></svg></span>
+        <div><h4>Eye Infections</h4><p>Bacterial, viral or fungal infections affecting the eye and lids.</p></div>
+      </div>
+      <div class="condition-card" style="--i:7">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-4.5 6-7 10-7s7.5 2.5 10 7c-2.5 4.5-6 7-10 7s-7.5-2.5-10-7Z"/><path d="M3 16h2M19 16h2M5 19l1.5-1.5M18.5 19 17 17.5"/></svg></span>
+        <div><h4>Vision Disorders</h4><p>Blurred, double or distorted vision arising from a range of causes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-pad" id="how-it-works">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>What To Expect From Your Visit</h2>
+      <p>The same four steps, whether you're booking a routine exam or a same-day emergency slot.</p>
+    </div>
+    <div class="process-grid reveal reveal-stagger">
+      <div class="process-step" style="--i:0">
+        <span class="num">01</span>
+        <h3>Book Your Slot</h3>
+        <p>Book online, by phone, or on WhatsApp — choose the service you need or let the front desk guide you.</p>
+      </div>
+      <div class="process-step" style="--i:1">
+        <span class="num">02</span>
+        <h3>Diagnostics</h3>
+        <p>A full workup on calibrated, hospital-grade equipment, covering vision, eye health and structure.</p>
+      </div>
+      <div class="process-step" style="--i:2">
+        <span class="num">03</span>
+        <h3>Specialist Consultation</h3>
+        <p>Your results are explained in plain language, along with every treatment option available to you.</p>
+      </div>
+      <div class="process-step" style="--i:3">
+        <span class="num">04</span>
+        <h3>Treatment &amp; Follow-Up</h3>
+        <p>Treatment, glasses, or a referral is arranged on the spot, with a follow-up scheduled before you leave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-gray section-pad" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Services FAQ</h2>
+      <p>The questions we're asked most before a first visit.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary>Do I need a referral to book an appointment? <span class="plus"></span></summary>
+        <p>No. You can book any service directly — a comprehensive eye examination, cataract or glaucoma screening, or an emergency slot — without a referral from another doctor.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does a comprehensive eye examination take? <span class="plus"></span></summary>
+        <p>Most comprehensive examinations take 45–60 minutes, including diagnostic imaging. Pupil dilation, when needed, adds extra time and leaves your near vision blurred for a few hours — plan for someone to drive you home.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What age do you see for pediatric eye care? <span class="plus"></span></summary>
+        <p>Our pediatric team sees children from infancy through the teenage years, including school vision screenings and lazy-eye (amblyopia) detection.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you accept health insurance (HMOs)? <span class="plus"></span></summary>
+        <p>We work with several major HMO plans in Nigeria. Bring your HMO ID to your appointment and our front desk will confirm your coverage before you're seen.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What counts as an eye emergency? <span class="plus"></span></summary>
+        <p>Sudden vision loss, a chemical splash, a foreign object in the eye, sudden severe eye pain, or an eye injury all qualify. Call ahead if you can, but you don't need an appointment — walk in and we'll see you immediately.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Not sure which service you need?</h2>
+        <p>Start with a comprehensive eye examination — our specialists will guide you from there.</p>
+      </div>
+      <div class="btns">
+        <a href="appointment.html" class="btn" style="background:#fff;color:var(--blue-dark);">Book Appointment</a>
+        <a href="contact.html" class="btn btn-ghost">Ask Us First</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 42 42" fill="none">
+            <circle cx="21" cy="21" r="20" fill="#1626A6"/>
+            <circle cx="21" cy="21" r="8.5" fill="#FF6A00"/>
+            <circle cx="24" cy="18" r="2.4" fill="#fff"/>
+          </svg>
+          <span class="brand-name">DE <b>KINGS EYES</b> CLINIC<small>Eye Care &amp; Biomedical Technology</small></span>
+        </a>
+        <p>A premium private eye hospital combining experienced specialists with modern biomedical technology — protecting your vision at every stage of life.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8.5h2V5h-2a4 4 0 0 0-4 4v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5a1 1 0 0 1 1-1Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.7v.1M12 16.5v-3.7c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2 1 2.2 2.4v3.6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Eye Examination</a></li>
+          <li><a href="services.html">Cataract Screening</a></li>
+          <li><a href="services.html">Glaucoma Screening</a></li>
+          <li><a href="services.html">Pediatric Eye Care</a></li>
+          <li><a href="services.html">Diabetic Eye Care</a></li>
+          <li><a href="services.html">Emergency Eye Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address>
+          <p>15 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
+          <p>+234 801 234 5678</p>
+          <p>care@dekingseyesclinic.com</p>
+        </address>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 De Kings Eyes Clinic. All rights reserved.</p>
+    <p class="made">Designed for modern, trustworthy eye care.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
